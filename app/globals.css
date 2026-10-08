@@ -1230,11 +1230,15 @@ right alignments read as stray indents, so everything squares left */
 }
 .footer__wp { text-align: right; }
 .wordmark--footer { opacity: .97; }
-/* banner logo replaces the giant hero wordmark — full-bleed like the original text line */
+/* hero copy stays above the absolutely-positioned logo banner */
+.hero { height: 100svh; padding-bottom: calc(min(calc(100vw * .85 / 1.7917), 62svh) + 2rem); }
+/* banner logo replaces the giant hero wordmark — proportional, anchored flush to the
+   hero bottom, height-capped so the ENTIRE logo stays visible in the initial viewport */
 .wordmark--logo {
   font-size: 0; /* kill text metrics */
-  display: block; width: calc(100% + var(--gutter) * 2);
-  height: auto; margin: 0 calc(var(--gutter) * -1) -0.06em;
+  position: absolute; bottom: 0; left: var(--gutter);
+  width: min(calc(100vw * .85), calc(62svh * 1.7917));
+  aspect-ratio: 2752 / 1536; height: auto;
   user-select: none; pointer-events: none;
 }
 /* ============================================================
