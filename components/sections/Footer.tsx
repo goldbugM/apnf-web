@@ -44,7 +44,7 @@ export default function Footer() {
           <a href="/datenschutz">DATENSCHUTZ</a>
         </nav>
         <div className="footer__end">
-          <video src="/assets/apnf/logo-anim-web.mp4" autoPlay muted loop playsInline preload="metadata" aria-label="APNF — Ambulanter privatärztlicher Notdienst Frankfurt e.V." style={{ width: "clamp(96px, 11vw, 150px)", height: "auto", borderRadius: ".35rem", margin: "0 0 .9rem", display: "block" }} />
+          <img src="/assets/apnf/logo-banner-transparent.png" width={2752} height={1536} decoding="async" aria-label="APNF — Ambulanter privatärztlicher Notdienst Frankfurt e.V." style={{ width: "clamp(220px, 24vw, 320px)", height: "auto", margin: "0 0 .9rem", display: "block" }} />
           <p className="footer__wp">
       EINSATZGEBIET — RHEIN-MAIN
             <br />
