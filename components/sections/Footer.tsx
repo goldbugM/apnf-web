@@ -52,7 +52,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <div className="wordmark wordmark--footer" aria-hidden="true">APNF</div>
     </footer>
     </>
   );
