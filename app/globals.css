@@ -1242,10 +1242,10 @@ right alignments read as stray indents, so everything squares left */
   aspect-ratio: 2752 / 1536; height: auto;
   user-select: none; pointer-events: none;
 }
-/* MOBILE: logo anchored at the TOP of the hero with 2cm top offset */
+/* MOBILE: logo anchored at the TOP of the hero — 2cm clear gap BELOW the fixed header */
 @media (max-width: 820px) {
-  .hero { padding-top: calc(2cm + (100vw * .85 / 1.7917) + clamp(1rem, 3vh, 2rem)); padding-bottom: clamp(1.5rem, 4vh, 3rem); }
-  .wordmark--logo { top: 2cm; bottom: auto; }
+  .hero { padding-top: calc(4rem + 2cm + (100vw * .85 / 1.7917) + clamp(1rem, 3vh, 2rem)); padding-bottom: clamp(1.5rem, 4vh, 3rem); }
+  .wordmark--logo { top: calc(4rem + 2cm); bottom: auto; }
 }
 /* ============================================================
 Reduced motion + static verification mode (?static)
