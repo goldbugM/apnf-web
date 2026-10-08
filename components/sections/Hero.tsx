@@ -24,7 +24,7 @@ export default function Hero() {
         </a>
       </div>
       <p className="hero__cue mono" data-reveal="">BEGINNEN SIE DEN SCROLL ↓</p>
-      <div className="wordmark" aria-hidden="true">APNF</div>
+      <img className="wordmark wordmark--logo" src="/assets/apnf/logo-banner-transparent.png" alt="APNF — Ambulanter privatärztlicher Notdienst Frankfurt e.V." aria-hidden="true" decoding="async" />
     </section>
     </>
   );

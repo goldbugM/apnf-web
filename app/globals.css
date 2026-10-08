@@ -1230,6 +1230,13 @@ right alignments read as stray indents, so everything squares left */
 }
 .footer__wp { text-align: right; }
 .wordmark--footer { opacity: .97; }
+/* banner logo replaces the giant hero wordmark — full-bleed like the original text line */
+.wordmark--logo {
+  font-size: 0; /* kill text metrics */
+  display: block; width: calc(100% + var(--gutter) * 2);
+  height: auto; margin: 0 calc(var(--gutter) * -1) -0.06em;
+  user-select: none; pointer-events: none;
+}
 /* ============================================================
 Reduced motion + static verification mode (?static)
 Both paths: everything visible, nothing animated, no pin.
