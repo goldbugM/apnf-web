@@ -1230,8 +1230,9 @@ right alignments read as stray indents, so everything squares left */
 }
 .footer__wp { text-align: right; }
 .wordmark--footer { opacity: .97; }
-/* hero copy stays above the absolutely-positioned logo banner */
-.hero { height: 100svh; padding-bottom: calc(min(calc(100vw * .85 / 1.7917), 62svh) + 2rem); }
+/* hero copy sits directly above the logo banner (not pushed to the top edge) */
+.hero { height: 100svh; padding-bottom: calc(min(calc(100vw * .85 / 1.7917), 62svh) + clamp(1.5rem, 4vh, 3rem)); }
+.hero .hero__copy { margin-bottom: 0; }
 /* banner logo replaces the giant hero wordmark — proportional, anchored flush to the
    hero bottom, height-capped so the ENTIRE logo stays visible in the initial viewport */
 .wordmark--logo {
